@@ -2,4 +2,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # @main 대신 v0.3.0 태그를 직접 지정합니다.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0
